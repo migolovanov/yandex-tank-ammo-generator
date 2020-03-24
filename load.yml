@@ -1,0 +1,16 @@
+phantom:
+    address: 127.0.0.1:80
+    ssl: false
+    load_profile:
+        load_type: rps
+        schedule: const(5, 2h)
+    ammofile: ammo.txt
+    instances: 10
+
+## disable output
+# telegraf:
+#     enabled: false
+# overload:
+#     enabled: false
+# console:
+#     enabled: false
