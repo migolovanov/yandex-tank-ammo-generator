@@ -106,7 +106,7 @@ Connection: {}
                     quote_plus(choice(attacks)))
             attack=sample.format(
                 query,
-                args.host,
+                choice(args.host),
                 choice(user_agents),
                 "\n{}: {}".format(args.ip_header,get_random_ip()) if args.ip_header else "",
                 args.hdr_connection)
